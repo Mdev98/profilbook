@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <main>
+        <div class="container">
+
+            <section class="registration">
+                <div class="registration_left">
+                   <h2>Inscription</h2>
+                   <form method="POST">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <button type="submit">inscrire</button>
+                   </form>
+                </div>
+                <div class="registration_right">
+                    <div class="illustration">
+                        <img src="{% static 'images/register.png'%}" alt="">                            
+                    </div>
+                    <p class="registration_text">
+                        Déjà inscris, connecte toi <a href="{% url 'login' %}">ici</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+{% endblock %}
+

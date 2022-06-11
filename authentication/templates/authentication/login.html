@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <main>
+        <div class="container">
+
+            <section class="registration">
+                <div class="registration_left">
+                   <h2>Connexion</h2>
+                   {{message}}
+                   <form method="POST">
+                        {% csrf_token %}
+                        {{form.as_p}}
+                        <button type="submit">connecter</button>
+                   </form>
+                </div>
+                <div class="registration_right">
+                    <div class="illustration">
+                        <img src="{% static 'images/login.png'%}" alt="">                            
+                    </div>
+                    <p class="registration_text">
+                        Pas encore de profile, inscris toi <a href="{% url 'signup' %}">ici</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+{% endblock %}
+

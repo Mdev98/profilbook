@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* ================== */
+/* ====== LOGIN ===== */
+/* ================== */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0a40092;
+}
+
+.registration {
+    width: 70%;
+    display: flex;
+    box-shadow: #f0a400d9 5px 5px, #f0a400c0 10px 10px, #f0a40090 15px 15px, #f0a40068 20px 20px, #f0a40044 25px 25px;
+}
+
+.registration > * { 
+    flex: 1;
+}
+
+.registration_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 0.5px solid #f0a40092;
+    border-top: 0.5px solid #f0a40048;
+}
+
+.registration_left h2 {
+    color: #293462;
+    margin: 20px 0px;
+}
+
+.registration_left form {
+    width: 70%;
+}
+
+.registration_left p {
+    margin-bottom: 10px;
+}
+
+.registration_left p label{
+    display: block;
+    font-weight: 600;
+    font-size: .8rem;
+    color: #293462;
+    margin-bottom: 5x;
+}
+
+.registration_left p input{
+    padding: 7px 7px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.registration_left button { 
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #293462;
+    color: #f0a400;
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.registration_left button:hover {
+    background-color: #f0a400;
+    color: #293462;
+}
+
+.registration_right {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.registration_text {
+    text-align: center;
+    margin: 10px;
+    font-weight: 600;
+    color: #293462;
+}
+
+.registration_text a {
+    color: #f0a400d9
+}
+
+.helptext {
+    display: none;
+}
+
+    
+
